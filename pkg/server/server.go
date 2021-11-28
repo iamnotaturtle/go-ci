@@ -11,7 +11,7 @@ import (
 func Start() {
 	r := CreateRouter()
 
-	err := http.ListenAndServe("localhost:9000",  middlewareTrimSlash(r))
+	err := http.ListenAndServe("localhost:9000", middlewareTrimSlash(r))
 	if err != nil {
 		panic(err)
 	}
