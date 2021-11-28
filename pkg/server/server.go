@@ -35,7 +35,7 @@ func homeHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 // Trims any trailing slashes on urls.
-// Otherwise we would 404 on a trailing slash. 
+// Otherwise we would 404 on a trailing slash.
 func middlewareTrimSlash(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		r.URL.Path = strings.TrimSuffix(r.URL.Path, "/")
