@@ -8,6 +8,10 @@ import (
 	"github.com/gorilla/mux"
 )
 
+type Foo struct {
+	A int `json: "foo"`
+}
+
 // Starts an http server on :9000
 func Start() {
 	r := CreateRouter()
