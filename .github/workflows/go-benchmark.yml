@@ -22,6 +22,8 @@ jobs:
       # Run benchmark with `go test -bench` and stores the output to a file
       - name: Run benchmark
         run: go test -bench "BenchmarkGetCharacter" ./pkg/... | tee output.txt
+      - name: Clear local changes
+        run: git add . && git reset --hard
       # gh-pages branch is updated and pushed automatically with extracted benchmark data
       - name: Store benchmark result
         uses: benchmark-action/github-action-benchmark@v1
