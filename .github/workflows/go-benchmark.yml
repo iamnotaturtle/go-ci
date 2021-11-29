@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-go@v1
+      - uses: actions/setup-go@v2
       # Run benchmark with `go test -bench` and stores the output to a file
       - name: Run benchmark
         run: go test -bench "BenchmarkGetCharacter" ./pkg/... | tee output.txt
@@ -24,7 +24,7 @@ jobs:
       - name: Store benchmark result
         uses: benchmark-action/github-action-benchmark@v1
         with:
-          name: My Project Go Benchmark
+          name: Benchmark Results
           tool: 'go'
           output-file-path: output.txt
           # Access token to deploy GitHub Pages branch
