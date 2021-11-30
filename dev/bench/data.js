@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1638228103190,
+  "lastUpdate": 1638247839739,
   "repoUrl": "https://github.com/iamnotaturtle/go-ci",
   "entries": {
     "Benchmark Results": [
@@ -60,6 +60,36 @@ window.BENCHMARK_DATA = {
             "value": 2247,
             "unit": "ns/op\t    1375 B/op\t      11 allocs/op",
             "extra": "468325 times\n2 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iamnotaturtle@users.noreply.github.com",
+            "name": "Iam Not Aturtle",
+            "username": "iamnotaturtle"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b8adf703853f18375333c66ea9cd6554e4e04ae5",
+          "message": "Merge pull request #7 from iamnotaturtle/code-cov\n\nAdds code cov",
+          "timestamp": "2021-11-29T23:50:11-05:00",
+          "tree_id": "5e559486fc2abbaf111e241eb1585eacd97685df",
+          "url": "https://github.com/iamnotaturtle/go-ci/commit/b8adf703853f18375333c66ea9cd6554e4e04ae5"
+        },
+        "date": 1638247839257,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkGetCharacter",
+            "value": 1801,
+            "unit": "ns/op\t    1398 B/op\t      11 allocs/op",
+            "extra": "632878 times\n2 procs"
           }
         ]
       }
