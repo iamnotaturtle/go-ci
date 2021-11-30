@@ -16,4 +16,11 @@ jobs:
     - name: Build
       run: go build -v ./pkg/...
     - name: Test
-      run: go test -v ./pkg/...
+      run: go test -v -coverprofile=coverage.out ./pkg/...
+    - name: Convert coverage to lcov
+      uses: jandelgado/gcov2lcov-action@v1.0.5
+    - name: Upload Coverage Report on Pull Request
+      uses: nohmad/lcov-report-action@v1
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        lcov-path: coverage.lcov
