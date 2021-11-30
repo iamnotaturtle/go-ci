@@ -23,4 +23,4 @@ jobs:
       uses: nohmad/lcov-report-action@v1
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
-        lcov-info: coverage.out
+        lcov-path: coverage.out
