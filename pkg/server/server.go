@@ -8,13 +8,17 @@ import (
 	"github.com/gorilla/mux"
 )
 
+const port = 9000
+
 // Starts an http server on :9000
 func Start() {
 	r := CreateRouter()
 
 	http.Handle("/", r)
 
-	err := http.ListenAndServe("localhost:9000", middlewareTrimSlash(r))
+	fmt.Printf("Listening on port:%d\n", port)
+
+	err := http.ListenAndServe(fmt.Sprintf("localhost:%d", port), middlewareTrimSlash(r))
 	if err != nil {
 		panic(err)
 	}
