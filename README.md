@@ -24,4 +24,3 @@ https://iamnotaturtle.github.io/go-ci/dev/bench/
 * [ ] deploy apps for each PR and on master
 * [ ] error tracking (ex: sentry)
 * [ ] logs
-* [ ] stale pr/issues
