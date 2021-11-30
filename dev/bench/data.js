@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1638280560866,
+  "lastUpdate": 1638280842136,
   "repoUrl": "https://github.com/iamnotaturtle/go-ci",
   "entries": {
     "Benchmark Results": [
@@ -270,6 +270,36 @@ window.BENCHMARK_DATA = {
             "value": 1961,
             "unit": "ns/op\t    1407 B/op\t      11 allocs/op",
             "extra": "559142 times\n2 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iamnotaturtle@users.noreply.github.com",
+            "name": "Iam Not Aturtle",
+            "username": "iamnotaturtle"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ee92c4857219c9791e6f46f2f16b56d01a38ff02",
+          "message": "Merge pull request #8 from iamnotaturtle/add-license-1\n\nCreate LICENSE",
+          "timestamp": "2021-11-30T09:00:14-05:00",
+          "tree_id": "801ba7273a9081f9c7a3e33add3ae23b0e845cc5",
+          "url": "https://github.com/iamnotaturtle/go-ci/commit/ee92c4857219c9791e6f46f2f16b56d01a38ff02"
+        },
+        "date": 1638280841571,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkGetCharacter",
+            "value": 2499,
+            "unit": "ns/op\t    1375 B/op\t      11 allocs/op",
+            "extra": "469029 times\n2 procs"
           }
         ]
       }
