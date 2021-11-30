@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1638247929624,
+  "lastUpdate": 1638248207442,
   "repoUrl": "https://github.com/iamnotaturtle/go-ci",
   "entries": {
     "Benchmark Results": [
@@ -120,6 +120,36 @@ window.BENCHMARK_DATA = {
             "value": 2345,
             "unit": "ns/op\t    1376 B/op\t      11 allocs/op",
             "extra": "461130 times\n2 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iamnotaturtle@users.noreply.github.com",
+            "name": "Iam Not Aturtle",
+            "username": "iamnotaturtle"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "633e5bcdaaceab228883fd1fc1ef78ffe590bc66",
+          "message": "Update README.md",
+          "timestamp": "2021-11-29T23:56:17-05:00",
+          "tree_id": "a773a0af2ac87f8e5c1ad6ebdc8f0df6787478fa",
+          "url": "https://github.com/iamnotaturtle/go-ci/commit/633e5bcdaaceab228883fd1fc1ef78ffe590bc66"
+        },
+        "date": 1638248206560,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkGetCharacter",
+            "value": 2199,
+            "unit": "ns/op\t    1371 B/op\t      11 allocs/op",
+            "extra": "508850 times\n2 procs"
           }
         ]
       }
