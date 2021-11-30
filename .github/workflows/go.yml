@@ -16,4 +16,11 @@ jobs:
     - name: Build
       run: go build -v ./pkg/...
     - name: Test
-      run: go test -v ./pkg/...
+      run: go test -v -coverprofile=coverage.out ./pkg/...
+    - name: Convert coverage to lcov
+      uses: jandelgado/gcov2lcov-action@v1.0.5
+    - name: Upload coverage
+      uses: VeryGoodOpenSource/very_good_coverage@v1.2.0
+      with:
+        path: './coverage/lcov.info'
+        min_coverage: 95
