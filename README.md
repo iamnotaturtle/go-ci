@@ -25,3 +25,4 @@ Releases work in two ways: by auto releasing the latest build and by creating a 
 * [ ] deploy apps for each PR and on master
 * [ ] error tracking (ex: sentry)
 * [ ] logs
+* [ ] security scanning (could be handled by dependabot)
