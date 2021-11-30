@@ -6,8 +6,11 @@ Nice setup for any go repo. We have these actions so far:
 * linting via [golangci-lint](https://golangci-lint.run/)
 * auto formatting via [gofumpt](https://github.com/mvdan/gofumpt)
 * building/testing
+* benchmarking
+
+## Benchmark
+https://iamnotaturtle.github.io/go-ci/dev/bench/
 
 ## TODO
-* [ ] benchmarking
 * [ ] code coverage
 * [ ] releases
