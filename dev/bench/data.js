@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1638279737344,
+  "lastUpdate": 1638280560866,
   "repoUrl": "https://github.com/iamnotaturtle/go-ci",
   "entries": {
     "Benchmark Results": [
@@ -240,6 +240,36 @@ window.BENCHMARK_DATA = {
             "value": 2355,
             "unit": "ns/op\t    1374 B/op\t      11 allocs/op",
             "extra": "484378 times\n2 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iamnotaturtle@users.noreply.github.com",
+            "name": "Yakov",
+            "username": "iamnotaturtle"
+          },
+          "committer": {
+            "email": "iamnotaturtle@users.noreply.github.com",
+            "name": "Yakov",
+            "username": "iamnotaturtle"
+          },
+          "distinct": true,
+          "id": "28d813746718beb979caddc9360608fcace36704",
+          "message": "Adds release workflow",
+          "timestamp": "2021-11-30T08:55:17-05:00",
+          "tree_id": "e7080c9cb94497411361967e4a58e75329ec352c",
+          "url": "https://github.com/iamnotaturtle/go-ci/commit/28d813746718beb979caddc9360608fcace36704"
+        },
+        "date": 1638280560064,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkGetCharacter",
+            "value": 1961,
+            "unit": "ns/op\t    1407 B/op\t      11 allocs/op",
+            "extra": "559142 times\n2 procs"
           }
         ]
       }
