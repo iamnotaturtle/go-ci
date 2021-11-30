@@ -12,5 +12,4 @@ Nice setup for any go repo. We have these actions so far:
 https://iamnotaturtle.github.io/go-ci/dev/bench/
 
 ## TODO
-* [ ] code coverage
 * [ ] releases
