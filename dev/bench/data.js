@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1638304216742,
+  "lastUpdate": 1638326930742,
   "repoUrl": "https://github.com/iamnotaturtle/go-ci",
   "entries": {
     "Benchmark Results": [
@@ -360,6 +360,36 @@ window.BENCHMARK_DATA = {
             "value": 1850,
             "unit": "ns/op\t    1396 B/op\t      11 allocs/op",
             "extra": "651176 times\n2 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "iamnotaturtle@users.noreply.github.com",
+            "name": "Iam Not Aturtle",
+            "username": "iamnotaturtle"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "866e28072257227268febf05089cca1abbebd971",
+          "message": "Merge pull request #9 from iamnotaturtle/deploys\n\nRemove gitpod",
+          "timestamp": "2021-11-30T21:48:29-05:00",
+          "tree_id": "e8eb7ff64f10fd076fa5640cca585a00af6b0eb8",
+          "url": "https://github.com/iamnotaturtle/go-ci/commit/866e28072257227268febf05089cca1abbebd971"
+        },
+        "date": 1638326930290,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkGetCharacter",
+            "value": 2012,
+            "unit": "ns/op\t    1400 B/op\t      11 allocs/op",
+            "extra": "617641 times\n2 procs"
           }
         ]
       }
