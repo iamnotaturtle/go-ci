@@ -18,9 +18,11 @@ func Start() {
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = "localhost:9000"
+	} else {
+		port = ":" + port
 	}
 
-	fmt.Printf("Listening on port:%s\n", port)
+	fmt.Printf("Listening on port %s\n", port)
 
 	err := http.ListenAndServe(port, middlewareTrimSlash(r))
 	if err != nil {
