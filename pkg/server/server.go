@@ -3,12 +3,12 @@ package server
 import (
 	"fmt"
 	"net/http"
+	"os"
+	"strconv"
 	"strings"
 
 	"github.com/gorilla/mux"
 )
-
-const port = 9000
 
 // Starts an http server on :9000
 func Start() {
@@ -16,9 +16,18 @@ func Start() {
 
 	http.Handle("/", r)
 
+	envPort := os.Getenv("PORT")
+	if envPort == "" {
+		envPort = "9000"
+	}
+	port, err := strconv.Atoi(envPort)
+	if err != nil {
+		panic(err)
+	}
+
 	fmt.Printf("Listening on port:%d\n", port)
 
-	err := http.ListenAndServe(fmt.Sprintf("localhost:%d", port), middlewareTrimSlash(r))
+	err = http.ListenAndServe(fmt.Sprintf("localhost:%d", port), middlewareTrimSlash(r))
 	if err != nil {
 		panic(err)
 	}
