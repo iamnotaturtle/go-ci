@@ -21,6 +21,9 @@ Handled by a stricter formatter [gofumpt](https://github.com/mvdan/gofumpt) whic
 ## Releases
 Releases work in two ways: by auto releasing the latest build and by creating a release if a tag is made.
 
+## Deploys
+Deployment is done via a Heroku. Review apps are deployed for a PR when status checks are passed. A staging app is deployed automatically on each merge to master.
+
 ## TODO
 * [ ] error tracking (ex: sentry)
 * [ ] logs
