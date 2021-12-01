@@ -33,8 +33,15 @@ func Start() {
 // Creates a router and adds routes
 func CreateRouter() *mux.Router {
 	r := mux.NewRouter()
+	r.HandleFunc("/", rootHandler)
 	r.HandleFunc("/character/{type}", homeHandler)
 	return r
+}
+
+// Handles root requests
+func rootHandler(w http.ResponseWriter, r *http.Request) {
+	w.WriteHeader(http.StatusOK)
+	fmt.Fprintf(w, "it works I promise!")
 }
 
 // Handles incoming requests
@@ -48,7 +55,9 @@ func homeHandler(w http.ResponseWriter, r *http.Request) {
 // Otherwise we would 404 on a trailing slash.
 func middlewareTrimSlash(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		r.URL.Path = strings.TrimSuffix(r.URL.Path, "/")
+		if r.URL.Path != "/" {
+			r.URL.Path = strings.TrimSuffix(r.URL.Path, "/")
+		}
 		next.ServeHTTP(w, r)
 	})
 }
