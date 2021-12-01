@@ -1,1 +1,1 @@
-web: go run -v ./cmd/run-server
+web: bin/run-server
