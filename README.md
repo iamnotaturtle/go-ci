@@ -22,7 +22,6 @@ Handled by a stricter formatter [gofumpt](https://github.com/mvdan/gofumpt) whic
 Releases work in two ways: by auto releasing the latest build and by creating a release if a tag is made.
 
 ## TODO
-* [ ] deploy apps for each PR and on master
 * [ ] error tracking (ex: sentry)
 * [ ] logs
 * [ ] security scanning (could be handled by dependabot)
